@@ -1039,6 +1039,8 @@
     <Content Include="AdminLTE-2-master\starter.html" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\font-awesome.min.css" />
+    <Content Include="bootstrap\css\ionicons.min.css" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
