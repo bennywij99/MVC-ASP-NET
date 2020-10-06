@@ -1975,6 +1975,20 @@
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="smartRegister\css\bootstrap.css" />
+    <Content Include="smartRegister\css\style.css" />
+    <Content Include="smartRegister\images\arrow.png" />
+    <Content Include="smartRegister\images\banner1.png" />
+    <Content Include="smartRegister\images\banner2.png" />
+    <Content Include="smartRegister\images\bg3.jpg" />
+    <Content Include="smartRegister\images\content.jpg" />
+    <Content Include="smartRegister\images\mail.png" />
+    <Content Include="smartRegister\images\pass.png" />
+    <Content Include="smartRegister\index.html" />
+    <Content Include="smartRegister\js\bootstrap.min.js" />
+    <Content Include="smartRegister\js\jquery-1.10.2.min.js" />
+    <Content Include="smartRegister\js\validator.min.js" />
+    <Content Include="smartRegister\w3layouts-License.txt" />
     <Content Include="smartLogin\css\style.css" />
     <Content Include="smartLogin\images\arrow.png" />
     <Content Include="smartLogin\images\bg3.jpg" />
@@ -2029,6 +2043,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Account\SmartLogin.cshtml" />
+    <Content Include="Views\Account\SmartRegister.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
