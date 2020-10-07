@@ -197,6 +197,7 @@ namespace WebApplication4.Controllers
                     Email = model.Email,
                     FullName = model.FullName,
                     Gender = model.Gender,
+                    PhoneNumber = model.PhoneNumber,
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

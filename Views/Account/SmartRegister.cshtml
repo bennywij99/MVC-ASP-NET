@@ -18,25 +18,30 @@
 <body>
     <h1 class="w3ls">Authentication Signup Form</h1>
     <div class="content-agileits">
-        @using (Html.BeginForm("SmartRegister", "Account", FormMethod.Post, new {role = "form" }))
+        @using (Html.BeginForm("SmartRegister", "Account", FormMethod.Post, new { role = "form", autocomplete = false }))
         {
             @Html.AntiForgeryToken()
             @Html.ValidationSummary("", new { @class = "text-danger" })
             <div class="form-group w3layouts w3 w3l">
                 @Html.LabelFor(m => m.FullName, new { @class = "control-label" })
                 @Html.TextBoxFor(m => m.FullName, new { @class = "form-control" })
+
             </div>
             <div class="form-group agileits w3layouts w3">
                 @Html.LabelFor(m => m.Gender, new { @class = "control-label" })
                 <div class="form-inline row">
                     <div class="form-group col-sm-6 agileits-w3layouts">
-                        @Html.RadioButtonFor(m => m.Gender, true) @Html.Label("Male", new { @class = "control-label" })
+                        @Html.RadioButtonFor(m => m.Gender, true) @Html.Label("Male", new { @class = "control-label"})
                     </div>
                     <div class="form-group col-sm-6 w3-agile">
-                        @Html.RadioButtonFor(m => m.Gender, false) @Html.Label("Female", new { @class = "control-label" })
+                        @Html.RadioButtonFor(m => m.Gender, false) @Html.Label("Female", new { @class = "control-label"})
                     </div>
                 </div>
-            
+
+            </div>
+            <div class="form-group w3layouts w3 w3l">
+                @Html.LabelFor(m => m.PhoneNumber, new { @class = "control-label" })
+                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control numericOnly", onkeypress = "return isNumberKey(event)", @maxlength = "16" })
             </div>
             <div class="form-group agileits w3layouts w3">
                 @Html.LabelFor(m => m.UserName, new { @class = "control-label" })
@@ -44,13 +49,13 @@
             </div>
             <div class="form-group agileits w3layouts w3">
                 @Html.LabelFor(m => m.Email, new { @class = "control-label" })
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @type = "email" })
             </div>
             <div class="form-group agile agileits-w3layouts w3-agile">
                 @Html.LabelFor(m => m.Password, new { @class = "control-label" })
                 <div class="form-inline row">
                     <div class="form-group col-sm-6 agileits-w3layouts">
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-control"})
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
                         <div class="help-block">Minimum of 6 characters</div>
                     </div>
                     <div class="form-group col-sm-6 w3-agile">
@@ -69,6 +74,20 @@
     <script src="~/smartRegister/js/jquery-1.10.2.min.js"></script>
     <script src="~/smartRegister/js/bootstrap.min.js"></script>
     <script src="~/smartRegister/js/validator.min.js"></script>
+    <script type="text/javascript">
+        $(".numericOnly").bind("paste", function (e) {
+            e.preventDefault();
+        });
+        function isNumberKey(evt) {
+
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31
+                && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
     <!-- /js files -->
 </body>
 </html>
