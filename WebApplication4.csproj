@@ -171,6 +171,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="CustomPasswordHasher.cs" />
+    <Compile Include="Encrypt.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1110,6 +1112,13 @@
     <Content Include="dist\js\demo.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
+    <Content Include="eventRegister\css\font-awesome.css" />
+    <Content Include="eventRegister\css\style.css" />
+    <Content Include="eventRegister\index.html" />
+    <Content Include="eventRegister\js\jquery-2.1.4.min.js" />
+    <Content Include="eventRegister\js\jquery.vide.min.js" />
+    <Content Include="eventRegister\video\Ipad.mp4" />
+    <Content Include="eventRegister\w3layouts-License.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1996,6 +2005,14 @@
     <Content Include="smartLogin\images\pass.png" />
     <Content Include="smartLogin\index.html" />
     <Content Include="smartLogin\w3layouts-License.txt" />
+    <Content Include="eventRegister\fonts\CinzelDecorative-Black.ttf" />
+    <Content Include="eventRegister\fonts\CinzelDecorative-Bold.ttf" />
+    <Content Include="eventRegister\fonts\CinzelDecorative-Regular.ttf" />
+    <Content Include="eventRegister\fonts\fontawesome-webfont.eot" />
+    <Content Include="eventRegister\fonts\fontawesome-webfont.ttf" />
+    <Content Include="eventRegister\fonts\fontawesome-webfont.woff" />
+    <Content Include="eventRegister\fonts\fontawesome-webfont.woff2" />
+    <Content Include="eventRegister\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2044,6 +2061,7 @@
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Account\SmartLogin.cshtml" />
     <Content Include="Views\Account\SmartRegister.cshtml" />
+    <Content Include="Views\Account\EventRegister.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

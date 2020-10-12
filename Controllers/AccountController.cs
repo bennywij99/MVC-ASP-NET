@@ -175,7 +175,7 @@ namespace WebApplication4.Controllers
         }
 
         //
-        // GET: /Account/Register
+        // GET: /Account/SmartRegister
         [AllowAnonymous]
         public ActionResult SmartRegister()
         {
@@ -183,7 +183,7 @@ namespace WebApplication4.Controllers
         }
 
         //
-        // POST: /Account/Register
+        // POST: /Account/SmartRegister
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -216,6 +216,42 @@ namespace WebApplication4.Controllers
             }
 
             // If we got this far, something failed, redisplay form
+            return View(model);
+        }
+
+        //
+        // GET: /Account/EventRegister
+        [AllowAnonymous]
+        public ActionResult EventRegister()
+        {
+            return View();
+        }
+
+        //
+        // POST: /Account/EventRegister
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> EventRegister(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new ApplicationUser
+                {
+                    FullName = model.UserName,
+                    Email = model.Email,
+                    UserName = model.UserName,
+                    PhoneNumber = model.PhoneNumber,
+                };
+                var result = await UserManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                    return RedirectToAction("Index", "Home");
+                }
+                AddErrors(result);
+            }
+
             return View(model);
         }
 

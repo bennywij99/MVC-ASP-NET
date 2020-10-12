@@ -79,12 +79,8 @@ namespace WebApplication4.Models
         public string Email { get; set; }
         [Display(Name = "User Name"), Required]
         public string UserName { get; set; }
-        [Display(Name = "Full Name"), Required]
+        [Display(Name = "Full Name")]
         public string FullName { get; set; }
-
-        [Display(Name = "Phone Number"), Required]
-        public string PhoneNumber { get; set; }
-
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
@@ -97,7 +93,9 @@ namespace WebApplication4.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
-        [Display(Name = "Gender"), Required]
+        [Display(Name = "Phone Number")]
+        public string PhoneNumber { get; set; }
+        [Display(Name = "Gender")]
         public bool Gender { get; set; }
     }
 

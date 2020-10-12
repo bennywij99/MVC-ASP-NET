@@ -38,6 +38,7 @@ namespace WebApplication4
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)
         {
+            PasswordHasher = new CustomPasswordHasher();
         }
 
         public static ApplicationUserManager Create(IdentityFactoryOptions<ApplicationUserManager> options, IOwinContext context) 
