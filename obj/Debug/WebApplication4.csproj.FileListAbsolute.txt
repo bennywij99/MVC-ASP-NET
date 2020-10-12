@@ -101,7 +101,6 @@ C:\Users\ASUS\source\repos\WebApplication4\bin\Microsoft.Owin.Security.Twitter.x
 C:\Users\ASUS\source\repos\WebApplication4\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\ASUS\source\repos\WebApplication4\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\ASUS\source\repos\WebApplication4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.csprojAssemblyReference.cache
 C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.csproj.CopyComplete
 C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.dll
@@ -111,3 +110,5 @@ C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.csproj.Gene
 C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.Migrations.addfullname.resources
 C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.Migrations.gender.resources
 C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.Migrations.addfullname1.resources
+C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.Migrations.role.resources
+C:\Users\ASUS\source\repos\WebApplication4\obj\Debug\WebApplication4.csprojAssemblyReference.cache

@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="CustomPasswordHasher.cs" />
     <Compile Include="Encrypt.cs" />
@@ -192,10 +193,15 @@
     <Compile Include="Migrations\202009290646224_addfullname1.Designer.cs">
       <DependentUpon>202009290646224_addfullname1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010120443503_role.cs" />
+    <Compile Include="Migrations\202010120443503_role.Designer.cs">
+      <DependentUpon>202010120443503_role.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RoleViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -2062,6 +2068,11 @@
     <Content Include="Views\Account\SmartLogin.cshtml" />
     <Content Include="Views\Account\SmartRegister.cshtml" />
     <Content Include="Views\Account\EventRegister.cshtml" />
+    <Content Include="Views\Role\Create.cshtml" />
+    <Content Include="Views\Role\Edit.cshtml" />
+    <Content Include="Views\Role\Details.cshtml" />
+    <Content Include="Views\Role\Delete.cshtml" />
+    <Content Include="Views\Role\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -2091,6 +2102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009290646224_addfullname1.resx">
       <DependentUpon>202009290646224_addfullname1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010120443503_role.resx">
+      <DependentUpon>202010120443503_role.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

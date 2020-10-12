@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <add name="DefaultConnection" connectionString="Data Source=.;Initial Catalog=aspnet-comvc4-20130423110032.mdf;Integrated Security=false;AttachDBFilename=|DataDirectory|\aspnet-comvc4-20130423110032.mdf;User Id=sa2; Password=123456;" providerName="System.Data.SqlClient" />
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -24,7 +25,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Test", "Index", "Test")</li>
+                    <li>@Html.ActionLink("Role", "Index", "Role")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
