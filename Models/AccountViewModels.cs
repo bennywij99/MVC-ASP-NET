@@ -97,6 +97,7 @@ namespace WebApplication4.Models
         public string PhoneNumber { get; set; }
         [Display(Name = "Gender")]
         public bool Gender { get; set; }
+        public string RoleName { get; set; }
     }
 
     public class ResetPasswordViewModel
